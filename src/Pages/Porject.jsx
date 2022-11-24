@@ -1,8 +1,8 @@
 import React from 'react'
-
+import { Box } from '@chakra-ui/react'
 const Porject = () => {
   return (
-    <div>Porject</div>
+    <Box h={'100vh'}>bolo</Box>
   )
 }
 

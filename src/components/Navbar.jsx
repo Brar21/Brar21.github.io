@@ -7,14 +7,10 @@ import {
     Button,
     Menu,
     MenuButton,
-    MenuList,
-    MenuItem,
-    MenuDivider,
-    useDisclosure,
     useColorModeValue,
     Stack,
     useColorMode,
-    Center,
+    
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
@@ -38,13 +34,13 @@ export default function Nav() {
     return (
         <>
             <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
-                <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                     <Flex boxSize={'xl'}  fontWeight='600' justifyContent={'space-evenly'} alignItems={'center'}>
-                        <Box>Home</Box>
-                        <Box>About Me</Box>
-                    <Box>Skills</Box>
-                    <Box>Projects</Box>
-                        <Box>Logo</Box>
+                        <Link href={'/'}>Home</Link>
+                        <Link href={'/about'}>About Me</Link>
+                        <Link href='/skills'>Skills</Link>
+                        <Link href='/project'>Projects</Link>
+                        <Link href='/contact'>contact</Link>
                     </Flex>
                     <Flex alignItems={'center'}>
                         <Stack direction={'row'} spacing={7}>
@@ -61,13 +57,14 @@ export default function Nav() {
                                     bg="whatsapp.500"
                                     color='white'
                                     textDecoration='none'
-                                padding='2 5'>
+                                    padding='2 5'>
                                     RESUME
                                 </MenuButton>
                             </Menu>
                         </Stack>
                     </Flex>
-                </Flex>
+                </Flex> 
+             
             </Box>
         </>
     );
