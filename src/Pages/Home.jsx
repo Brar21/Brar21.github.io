@@ -11,12 +11,18 @@ import {
   IconButton,
   useColorModeValue,
 } from '@chakra-ui/react';
+import { useState } from 'react';
 import About from './About';
 import Contact from './Contact';
 import Porject from './Porject';
 import Skills from './Skills';
+import Typewriter from "typewriter-effect";
+export default function Home() {
+  const [state] = useState({
+    title: "Hi There",
+    titleSecond: "I'M Varinder Brar",
 
-export default function Home(props) {
+})
   return (
     <Container maxW={'7xl'}>
       <Stack
@@ -30,7 +36,7 @@ export default function Home(props) {
             fontWeight={600}
             fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}
             textAlign='start'
-            ml={20}
+            // ml={20}
           >
             <Text
               as={'span'}
@@ -45,14 +51,26 @@ export default function Home(props) {
                 bg: 'red.400',
                 zIndex: -1,
               }}>
-              Hi There,
+             {state.title}
             </Text>
             <br />
             <Text as={'span'} color={'red.400'}>
-             I'M Varinder Brar
+             {state.titleSecond}
             </Text>
           </Heading>
-          <Box w={'80%'} p="0 5rem">
+          <Box display={'flex'} justifyContent={'start'} fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }} lineHeight={1.1} fontWeight='600'>
+            <Typewriter options={{
+              autoStart: true,
+              loop: true,
+              delay: 40,
+              strings: [
+                "Full-Stack Developer.",
+                "Problem Solver.",
+                "Tech Lover."
+              ]
+            }}/>
+          </Box>
+          <Box w={'80%'}>
         
           <Stack
             spacing={{ base: 4, sm: 6 }}
@@ -97,8 +115,8 @@ export default function Home(props) {
               size={'lg'}
               color={'white'}
               position={'absolute'}
-              left={'50%'}
-              top={'50%'}
+              left={'40%'}
+              top={'40%'}
               transform={'translateX(-50%) translateY(-50%)'}
             />
             <Image
