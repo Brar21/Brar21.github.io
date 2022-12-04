@@ -12,10 +12,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import { useState } from 'react';
-import About from './About';
-import Contact from './Contact';
-import Porject from './Porject';
-import Skills from './Skills';
+
 import Typewriter from "typewriter-effect";
 export default function Home() {
   const [state] = useState({
@@ -24,7 +21,8 @@ export default function Home() {
 
 })
   return (
-    <Container maxW={'7xl'}>
+    <Container maxW={'7xl'} id={'home'}  margin="auto" h={{base:"80vh",lg:"90vh"}} border="1px solid red" borderColor={"transparent"}>
+      <Box m={"8rem 0"} >
       <Stack
         align={'center'}
         spacing={{ base: 8, md: 10 }}
@@ -36,7 +34,6 @@ export default function Home() {
             fontWeight={600}
             fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}
             textAlign='start'
-            // ml={20}
           >
             <Text
               as={'span'}
@@ -81,7 +78,10 @@ export default function Home() {
               size={'lg'}
               fontWeight={'normal'}
                 px={6}
-                mt={8}
+                  mt={8}
+                  bg="none"
+                  border={"1px solid red"}
+                  _hover={{bg:"red.400"}}
               >
               Resume
             </Button>
@@ -94,7 +94,7 @@ export default function Home() {
           align={'center'}
           position={'relative'}
           w={'full'}>
-          <Blob
+          {/* <Blob
             w={'100%'}
             h={'120%'}
             position={'absolute'}
@@ -102,28 +102,23 @@ export default function Home() {
             left={0}
             zIndex={-1}
             color={useColorModeValue('white.400', 'white.400')}
-          />
+          /> */}
           <Box
             position={'relative'}
-            height={'400px'}
-            width={'full'}
-            overflow={'hidden'}>
-            <IconButton
-              aria-label={'Play Button'}
-              variant={'ghost'}
-              _hover={{ bg: 'transparent' }}
-              size={'lg'}
-              color={'white'}
-              position={'absolute'}
-              left={'40%'}
-              top={'40%'}
-              transform={'translateX(-50%) translateY(-50%)'}
-            />
+          
+            width={'auto'}
+              overflow={'hidden'}
+              bgColor={useColorModeValue("#1A202C","red.400")}
+              borderRadius={'50%'}
+              h="auto"
+             >
+          
             <Image
-              alt={'Hero Image'}
+                alt={'Hero Image'}
+                h={{base:"820px",s:"800px" ,m:"500px"}}
               fit={'cover'}
               align={'center'}
-               ml="19%"
+              
               borderRadius={"50%"}
               
              
@@ -133,31 +128,29 @@ export default function Home() {
           
           </Box>
         </Flex>
-      </Stack>
-      <About />
-      <Skills />
-      <Porject />
-      <Contact/>
+        </Stack>
+      </Box>
+
     </Container>
   );
 }
 
 
 
-export const Blob = (props) => {
-  return (
-    <Icon
-      width={'100%'}
-      viewBox="0 0 578 440"
-      fill="none"
-      xmlns=""
-      {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M239.184 439.443c-55.13-5.419-110.241-21.365-151.074-58.767C42.307 338.722-7.478 282.729.938 221.217c8.433-61.644 78.896-91.048 126.871-130.712 34.337-28.388 70.198-51.348 112.004-66.78C282.34 8.024 325.382-3.369 370.518.904c54.019 5.115 112.774 10.886 150.881 49.482 39.916 40.427 49.421 100.753 53.385 157.402 4.13 59.015 11.255 128.44-30.444 170.44-41.383 41.683-111.6 19.106-169.213 30.663-46.68 9.364-88.56 35.21-135.943 30.551z"
-        fill="currentColor"
-      />
-    </Icon>
-  );
-};
+// // export const Blob = (props) => {
+// //   return (
+// //     <Icon
+// //       width={'100%'}
+// //       viewBox="0 0 578 440"
+// //       fill="none"
+// //       xmlns=""
+// //       {...props}>
+// //       <path
+// //         fillRule="evenodd"
+// //         clipRule="evenodd"
+// //         d="M239.184 439.443c-55.13-5.419-110.241-21.365-151.074-58.767C42.307 338.722-7.478 282.729.938 221.217c8.433-61.644 78.896-91.048 126.871-130.712 34.337-28.388 70.198-51.348 112.004-66.78C282.34 8.024 325.382-3.369 370.518.904c54.019 5.115 112.774 10.886 150.881 49.482 39.916 40.427 49.421 100.753 53.385 157.402 4.13 59.015 11.255 128.44-30.444 170.44-41.383 41.683-111.6 19.106-169.213 30.663-46.68 9.364-88.56 35.21-135.943 30.551z"
+// //         fill="currentColor"
+// //       />
+// //     </Icon>
+// //   );
+// };

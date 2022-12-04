@@ -1,9 +1,91 @@
 import React from 'react'
-import { Box } from '@chakra-ui/react'
-const Porject = () => {
+// import { Box } from '@chakra-ui/react'
+import {
+  Box,
+  Heading,
+  Link,
+  Image,
+  SimpleGrid,
+  Stack,
+  Text,
+  Flex,
+  Button,
+} from "@chakra-ui/react";
+import { AiFillGithub } from "react-icons/ai";
+import { FaRegEye } from "react-icons/fa";
+import { TiHtml5 } from "react-icons/ti";
+import { SiCsswizardry, SiJavascript, SiChakraui } from "react-icons/si";
+import { GrReactjs } from "react-icons/gr";
+const Project = () => {
+  const ProjectData = [
+    {
+      title: "Zara-Website",
+      link: "https://kunalchandel4.github.io/teamDeskChampions/",
+      url: "https://github.com/Brar21/Zara-Clone",
+      description:
+        "The company specializes in fast fashion, and products include clothing, accessories, shoes, beauty, and perfumes. Zara is one of the most successful fashion retail brands in the world",
+      language: [<TiHtml5 color='blue.200'  />, " ", <SiCsswizardry />, " ", <SiJavascript color='yellow' />, " ", " "],
+      image:
+        "https://github.com/kunalchandel4/teamDeskChampions/raw/main/images/Screenshot%20(1096).png",
+    },
+    {
+      title: "Small-case-website",
+      link: "https://sweet-cactus-515f7c.netlify.app/",
+      url: "https://github.com/Brar21/MailHubb.com",
+      description:
+        "MailChimp is a marketing automation platform designed and developed for businesses using email to reach out to their target market.",
+      language: [" ", <GrReactjs color='skyblue.400' />, " ", <SiChakraui color='seagreen'/>, " ", < TiHtml5 color = 'blue' />, " ", <SiCsswizardry />, " ",<SiJavascript color='yellow' />],
+      image:
+        "https://github.com/Brar21/MailHubb.com/blob/master/mailhubb/src/Images/Screenshot%202022-12-04%20102411.jpg?raw=true",
+    },
+    {
+      title: "Resume Builder",
+      link: "https://resume-builder-cssv.vercel.app/",
+      url: "https://github.com/chhavi48/ResumeBuilder/tree/main",
+      description:
+        "This is a personal project based Professional Resume Builder, with downloading in PDF format feature. Made with the help of react redux.",
+      language: [<TiHtml5 color='blue' />, <SiCsswizardry />, " ", <SiJavascript color='yellow' />, " "],
+      image:
+        "https://user-images.githubusercontent.com/94439105/175854197-45c646f0-1a11-4039-b633-efbd452075ca.png",
+    },
+  ];
   return (
-    <Box h={'100vh'}>bolo</Box>
-  )
-}
+    <Box m={40} id="projects" h={"100vh"} border="1px solid red">
+      <Heading color={"blue.500"} m="5rem">Projects</Heading>
+      <SimpleGrid columns={[1, 1, 2, 3]} spacing={4} mt={18}>
+        {ProjectData.map((t) => {
+          return (
+            <Stack
+              justifyContent={"center"}
+              alignItems={"center"}
+              _hover={{ border:"5px solid #F56565"}}
+              rounded={"xl"}
+              mx={8}
+              p={3}
+            >
+              <Image src={t.image} />
+             
+              <Text fontSize={"1.3rem"}>{t.title}</Text>
+              <Text>{t.description}</Text>
+                <Text display={'flex'} gap={4} fontSize={'2.5rem'} p={5} >{t.language}</Text>
+              
 
-export default Porject
+
+              <Flex justifyContent={"space-around"} gap={[4]} mb='2rem'>
+                <Button target="_blank" as="a" href={t.url} fontSize='54px' bg={"none"} borderRadius="60%" w={'auto'} padding={2} h={'auto'}  _hover={{bg:"red.400"}}>
+                  <AiFillGithub />
+                </Button>
+                <Button as="a" href={t.link} target="_blank" fontSize='54px' bg={"none"} borderRadius="60%" w={'auto'} padding={2} h={'auto'} _hover={{bg:"red.400"}}>
+                  <FaRegEye />
+                </Button>
+                </Flex>
+           
+            </Stack>
+          );
+        })}
+      </SimpleGrid>
+    </Box>
+  );
+};
+
+export default Project;
