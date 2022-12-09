@@ -4,8 +4,8 @@ import GitHubCalendar from "react-github-calendar";
 import { Box, Heading } from '@chakra-ui/react'
 const Github = () => {
     return (
-        <Box m={'10rem 5rem'} border="1px solid red" h={'50vh'}>
-            <Heading color={'blue.500'} >Github-Stats</Heading>
+        <Box m={'10rem 5rem'}  h={'50vh'}>
+            <Heading  >Github-Stats</Heading>
             <Box px={['2%', '4%', '8%', '16%', '24%']} py={8}>
                 <GitHubCalendar
                     username="Brar21"

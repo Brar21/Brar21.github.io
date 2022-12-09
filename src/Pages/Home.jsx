@@ -21,8 +21,8 @@ export default function Home() {
 
 })
   return (
-    <Container maxW={'7xl'} id={'home'}  margin="auto" h={{base:"80vh",lg:"90vh"}} border="1px solid red" borderColor={"transparent"}>
-      <Box m={"8rem 0"} >
+    <Container maxW={'7xl'} id={'home'} top='100px'>
+      <Box>
       <Stack
         align={'center'}
         spacing={{ base: 8, md: 10 }}
