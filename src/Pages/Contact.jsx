@@ -18,9 +18,8 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import React, { useRef } from "react";
-import { BsGithub, BsLinkedin, BsPerson, BsTwitter } from 'react-icons/bs';
+import { BsGithub, BsLinkedin, BsPerson, BsTwitter, BsYoutube } from 'react-icons/bs';
 import { MdEmail, MdOutlineEmail } from 'react-icons/md';
-import { SiGmail } from "react-icons/si";
 import emailjs from "@emailjs/browser";
 import { useState } from 'react';
 
@@ -68,7 +67,7 @@ export default function Contact() {
                 base: '3xl',
                 md: '5xl',
               }}>
-              Get in Touch
+             Contact me
             </Heading>
 
             <Stack
@@ -96,12 +95,12 @@ export default function Contact() {
                   />
                 </Link>
 
-                <Link href="https://vs21418@gmail.com">
+                  <Link href="https://www.youtube.com/@JavaScriptFolks">
                   <IconButton
-                    aria-label="gmail"
+                    aria-label="youtube"
                     variant="ghost"
                     size="4rem"
-                      icon={<SiGmail size="5rem" />}
+                      icon={<BsYoutube size="5rem" />}
                     _hover={{
                       bg: 'red.400',
                  

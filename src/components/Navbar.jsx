@@ -1,6 +1,6 @@
 import React from 'react';
 import NavLink from './NavLink';
-
+import css from "./Navbar.css"
 import {
     Box,
     Flex,
@@ -12,7 +12,8 @@ import {
     Stack,
     useColorMode,
     useDisclosure,
-    HStack
+    HStack,
+    Text
     
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
@@ -42,7 +43,7 @@ export default function Nav() {
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <HStack spacing={8} alignItems={'center'}>
-                        <Box><Heading fontFamily={'mono'}>VARI<span color='red'>NDER</span></Heading></Box>
+                        <Box><Heading className='heading' fontSize={20} display={'flex'} fontFamily="Dancing Script">VARINDER<Text ml={2}>BRAR</Text></Heading></Box>
                         <HStack
                             as={'nav'}
                             spacing={4}
@@ -70,7 +71,7 @@ export default function Nav() {
                             <Menu>
                                
                                 <Button
-                                    as={'a'}
+                                    // as={'a'}
                                     variant={'link'}
                                     cursor={'pointer'}
                                     minW={0}
@@ -81,11 +82,12 @@ export default function Nav() {
                                     padding='2 5'
                                     display={{ base: 'none', md: 'flex' }}
                                     target={"_blank"}
-                                    href={'https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view?usp=sharing'}
+                                    // href={'https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view?usp=sharing'}
                                     rel="noreferrer"
-                                    download={'https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view?usp=sharing'}
+                                    // download={'https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view?usp=sharing'}
                                 >
-                                        RESUME
+                                    <a href={'https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view?usp=sharing'} download>          RESUME</a>
+                              
                                     
                                     </Button>
                              
