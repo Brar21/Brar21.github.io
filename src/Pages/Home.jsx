@@ -21,8 +21,8 @@ export default function Home() {
 
 })
   return (
-    <Container maxW={'7xl'} id={'home'} top='100px'>
-      <Box>
+    <Container maxW={'7xl'} id={'home'} >
+      <Box mt={'5rem'}>
       <Stack
         align={'center'}
         spacing={{ base: 8, md: 10 }}
@@ -73,15 +73,19 @@ export default function Home() {
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: 'column', sm: 'row' }}>
          
-            <Button
+                <Button
+                  as={'a'}
               rounded={'full'}
               size={'lg'}
               fontWeight={'normal'}
-                px={6}
+                  px={6}
+                  href={'https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view?usp=sharing'}
                   mt={8}
                   bg="none"
                   border={"1px solid red"}
-                  _hover={{bg:"red.400"}}
+                  _hover={{ bg: "red.400" }}
+                  target={'_blank'}
+                  download={'https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view?usp=sharing'}
               >
               Resume
             </Button>
@@ -94,15 +98,6 @@ export default function Home() {
           align={'center'}
           position={'relative'}
           w={'full'}>
-          {/* <Blob
-            w={'100%'}
-            h={'120%'}
-            position={'absolute'}
-            top={'-5%'}
-            left={0}
-            zIndex={-1}
-            color={useColorModeValue('white.400', 'white.400')}
-          /> */}
           <Box
             position={'relative'}
           
@@ -134,23 +129,3 @@ export default function Home() {
     </Container>
   );
 }
-
-
-
-// // export const Blob = (props) => {
-// //   return (
-// //     <Icon
-// //       width={'100%'}
-// //       viewBox="0 0 578 440"
-// //       fill="none"
-// //       xmlns=""
-// //       {...props}>
-// //       <path
-// //         fillRule="evenodd"
-// //         clipRule="evenodd"
-// //         d="M239.184 439.443c-55.13-5.419-110.241-21.365-151.074-58.767C42.307 338.722-7.478 282.729.938 221.217c8.433-61.644 78.896-91.048 126.871-130.712 34.337-28.388 70.198-51.348 112.004-66.78C282.34 8.024 325.382-3.369 370.518.904c54.019 5.115 112.774 10.886 150.881 49.482 39.916 40.427 49.421 100.753 53.385 157.402 4.13 59.015 11.255 128.44-30.444 170.44-41.383 41.683-111.6 19.106-169.213 30.663-46.68 9.364-88.56 35.21-135.943 30.551z"
-// //         fill="currentColor"
-// //       />
-// //     </Icon>
-// //   );
-// };

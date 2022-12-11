@@ -50,8 +50,8 @@ const Project = () => {
     },
   ];
   return (
-    <Box  id="projects" h={"100vh"}>
-      <Heading  m="5rem">Projects</Heading>
+    <Box  id="projects">
+      <Heading  m="5rem" textAlign={'center'}>Projects</Heading>
       <SimpleGrid columns={[1, 1, 2, 3]} spacing={4} mt={18}>
         {ProjectData.map((t) => {
           return (

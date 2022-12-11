@@ -1,13 +1,13 @@
 import React from 'react';
 import NavLink from './NavLink';
+
 import {
     Box,
     Flex,
    IconButton,
-    Link,
+    Heading,
     Button,
     Menu,
-    MenuButton,
     useColorModeValue,
     Stack,
     useColorMode,
@@ -42,11 +42,11 @@ export default function Nav() {
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <HStack spacing={8} alignItems={'center'}>
-                        <Box>Logo</Box>
+                        <Box><Heading fontFamily={'mono'}>VARI<span color='red'>NDER</span></Heading></Box>
                         <HStack
                             as={'nav'}
                             spacing={4}
-                            display={{ base: 'none', md: 'flex' }}>
+                            display={{ base: 'none', md: 'flex', }}>
                             {Links.map((link, i) => (
                                 <NavLink
                                     key={i}
@@ -68,8 +68,9 @@ export default function Nav() {
                             </Button>
 
                             <Menu>
+                               
                                 <Button
-                                    as={Button}
+                                    as={'a'}
                                     variant={'link'}
                                     cursor={'pointer'}
                                     minW={0}
@@ -78,18 +79,35 @@ export default function Nav() {
                                     color='white'
                                     textDecoration='none'
                                     padding='2 5'
-                                    download>
-                                    RESUME
-                                </Button>
+                                    display={{ base: 'none', md: 'flex' }}
+                                    target={"_blank"}
+                                    href={'https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view?usp=sharing'}
+                                    rel="noreferrer"
+                                    download={'https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view?usp=sharing'}
+                                >
+                                        RESUME
+                                    
+                                    </Button>
+                             
                             </Menu>
                         </Stack>
                     </Flex>
                 </Flex> 
                 {isOpen ? (
-                    <Box pb={4} display={{ md: 'none' }}>
-                        <Stack as={'nav'} spacing={4}>
-                            {Links.map((link) => (
-                                <NavLink key={link}>{link}</NavLink>
+                    <Box pb={4} display={{ md: 'none' }}
+
+                    >
+                        <Stack as={'nav'} spacing={4}  >
+                            {Links.map((link, i) => (
+                                <NavLink
+
+                                    key={i}
+                                    to={link.id}
+                                    name={link.name}
+                                    w="xm"
+                                    textalign="center"
+                                    onClick={() => onClose()}
+                                />
                             ))}
                         </Stack>
                     </Box>

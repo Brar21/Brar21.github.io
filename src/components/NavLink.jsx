@@ -5,7 +5,7 @@ function NavLink({ to, name, onClose, ...rest }) {
 
 
     return (
-        <Link to={to} spy={true} smooth={true} offset={50} duration={1000} onClick={onClose}>
+        <Link to={to} spy={true} smooth={true} offset={-60} duration={1000} onClick={onClose}>
             <Button
 
                 size="sm"
