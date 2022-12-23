@@ -25,7 +25,7 @@ export default function Contact() {
   const form = useRef();
   const [show, setShow] = useState(false);
   const sendEmail = (e) => {
-    const toast = useToast()
+    //const toast = useToast()
     e.preventDefault();
 
     emailjs
@@ -37,13 +37,13 @@ export default function Contact() {
       )
       .then(
         (response) => {
-            toast({
-          title: 'Account created.',
-          description: "Mail is Send to Varinder.",
-          status: 'success',
-          duration: 9000,
-          isClosable: true,
-        })
+        //    toast({
+        //  title: 'Account created.',
+        //  description: "Mail is Send to Varinder.",
+        //  status: 'success',
+        //  duration: 9000,
+        //  isClosable: true,
+        //})
           console.log("SUCCESS!", response.status, response.text);
         },
         (error) => {
