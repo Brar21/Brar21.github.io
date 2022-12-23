@@ -17,7 +17,8 @@ import {
     
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import {HamburgerIcon,CloseIcon} from '@chakra-ui/icons';
+import Resume from "./Varinder_Brar_Resume.pdf"
 
 const Links = [
     { name: "Home", id: "home" },
@@ -71,7 +72,7 @@ export default function Nav() {
                             <Menu>
                                
                                 <Button
-                                    // as={'a'}
+                                     as={'a'}
                                     variant={'link'}
                                     cursor={'pointer'}
                                     minW={0}
@@ -82,13 +83,11 @@ export default function Nav() {
                                     padding='2 5'
                                     display={{ base: 'none', md: 'flex' }}
                                     target={"_blank"}
-                                    // href={'https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view?usp=sharing'}
-                                    rel="noreferrer"
-                                    // download={'https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view?usp=sharing'}
+                                    href={Resume}
+                                    download={Resume}
+                                    rel="noreferrer"  
                                 >
-                                    <a href={'https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view?usp=sharing'} download>          RESUME</a>
-                              
-                                    
+                                              RESUME
                                     </Button>
                              
                             </Menu>
