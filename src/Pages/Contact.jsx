@@ -12,10 +12,7 @@ import {
   Link,
   Stack,
   Textarea,
-  Tooltip,
-  useClipboard,
-  useColorModeValue,
-  VStack,
+  VStack,useToast
 } from '@chakra-ui/react';
 import React, { useRef } from "react";
 import { BsGithub, BsLinkedin, BsPerson, BsTwitter, BsYoutube } from 'react-icons/bs';
@@ -27,7 +24,6 @@ import { useState } from 'react';
 export default function Contact() {
   const form = useRef();
   const [show, setShow] = useState(false);
-  import { useToast } from '@chakra-ui/react'
   const sendEmail = (e) => {
     const toast = useToast()
     e.preventDefault();
