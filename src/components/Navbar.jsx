@@ -72,7 +72,7 @@ export default function Nav() {
                             <Menu>
                                
                                 <Button
-                                     as={'a'}
+
                                     variant={'link'}
                                     cursor={'pointer'}
                                     minW={0}
@@ -83,11 +83,9 @@ export default function Nav() {
                                     padding='2 5'
                                     display={{ base: 'none', md: 'flex' }}
                                     target={"_blank"}
-                                    href={Resume}
-                                    download={Resume}
                                     rel="noreferrer"  
                                 >
-                                              RESUME
+                                          <a href={Resume} download={"Varinder_Brar_Resume.pdf"}>RESUME</a>    
                                     </Button>
                              
                             </Menu>
