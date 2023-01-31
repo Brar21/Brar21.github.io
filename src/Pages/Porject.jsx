@@ -58,14 +58,14 @@ const Project = () => {
           "https://camo.githubusercontent.com/fe904ef2dbd4519af3547dfbdc316657eaa3511f71be243ce9122d80a69075aa/68747470733a2f2f692e6962622e636f2f43516b305232542f6e796b61612e706e67",
       },
       {
-        title: "NDTV.com",
-        link: "https://brar21.github.io/NDTV-Website.com/",
-        url: "https://github.com/Brar21/NDTV-Website.com",
+        title: "Typetest.com",
+        link: "https://typemaster-speedtester.vercel.app/",
+        url: "https://github.com/Brar21/Typemaster-speedtester",
         description:
-          "This is a personal project based Professional Resume Builder, with downloading in PDF format feature. Made with the help of react redux.",
+          "Typing Master to check real time typing speed and accuracy's during typing paragraphs. Also providing ranking according to typing speed.",
         language: [<TiHtml5 color='blue' />, <SiCsswizardry />, " ", <SiJavascript color='yellow' />, " "],
         image:
-          "https://github.com/Brar21/NDTV-Website.com/raw/master/imges/Homepage.jpg?raw=true",
+          "https://github.com/Brar21/Typemaster-speedtester/raw/master/src/images/Homepage.jpg?raw=true",
       },
   ];
   return (
