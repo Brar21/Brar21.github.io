@@ -2,7 +2,6 @@
 import './App.css';
 import Nav from './components/Navbar';
 import { AllRoutes } from './components/AllRoutes';
-import Home from './Pages/Home';
 
 import About from './Pages/About';
 import Project from './Pages/Porject';

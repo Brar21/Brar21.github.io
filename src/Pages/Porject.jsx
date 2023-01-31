@@ -3,7 +3,6 @@ import React from 'react'
 import {
   Box,
   Heading,
-  Link,
   Image,
   SimpleGrid,
   Stack,
@@ -47,7 +46,27 @@ const Project = () => {
       language: [<TiHtml5 color='blue' />, <SiCsswizardry />, " ", <SiJavascript color='yellow' />, " "],
       image:
         "https://github.com/Brar21/NDTV-Website.com/raw/master/imges/Homepage.jpg?raw=true",
-    },
+      },
+      {
+        title: "Nykaa.com",
+        link: "https://panachebeauty.netlify.app/",
+        url: "https://github.com/AdityaBr11/Nykaa-Clone",
+        description:
+          "Nykaa.com Clone is ReactJS e-commerce web application that allows you to buy cosmetics products online with effortable prices.",
+        language: [<TiHtml5 color='blue' />, <SiCsswizardry />, " ", <SiJavascript color='yellow' />, " "],
+        image:
+          "https://camo.githubusercontent.com/fe904ef2dbd4519af3547dfbdc316657eaa3511f71be243ce9122d80a69075aa/68747470733a2f2f692e6962622e636f2f43516b305232542f6e796b61612e706e67",
+      },
+      {
+        title: "NDTV.com",
+        link: "https://brar21.github.io/NDTV-Website.com/",
+        url: "https://github.com/Brar21/NDTV-Website.com",
+        description:
+          "This is a personal project based Professional Resume Builder, with downloading in PDF format feature. Made with the help of react redux.",
+        language: [<TiHtml5 color='blue' />, <SiCsswizardry />, " ", <SiJavascript color='yellow' />, " "],
+        image:
+          "https://github.com/Brar21/NDTV-Website.com/raw/master/imges/Homepage.jpg?raw=true",
+      },
   ];
   return (
     <Box  id="projects">
