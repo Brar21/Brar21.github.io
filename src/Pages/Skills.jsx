@@ -20,7 +20,7 @@ import {
   FaCss3Alt,
   FaBootstrap,
 } from "react-icons/fa";
-import { Box, Heading, Link, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import { Box, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 
 const Skills = () => {
   const technologies = [
@@ -53,11 +53,12 @@ const Skills = () => {
       name: "React",
       icon: <FaReact />,
       color: "blue.400",
-    
+    },
+    {
+      name: "Redux",
       icon: <SiRedux />,
       color: "red.500",
     },
-
 
     {
       name: "Chakra UI",
@@ -101,26 +102,38 @@ const Skills = () => {
       name: "NPM",
       icon: <SiNpm />,
       color: "red.500",
-    },
-
-
+      },
+      {
+        name: "MongoDB",
+        icon: <SiMongodb />,
+        color: "red.500",
+      },
+      {
+        name: "Express.js",
+        icon: <SiExpress />,
+        color: "red.500",
+      }
   ];
   return (
-    <Box  mx={[4, 8, 16, 24]} id='skills'>
-      <Heading mb={'5rem'}>Skills</Heading>
-      <SimpleGrid columns={[1, 2, 3]} spacing={4} mt={8}
-        className="anim">
+    <Box mx={[4, 8, 16, 24]} id="skills">
+      <Heading mb={"5rem"}>Skills</Heading>
+      <SimpleGrid columns={[1, 2, 3, 4]} spacing={4} mt={8} className="anim">
         {technologies.map((t) => {
           return (
-           
-              <Stack justifyContent={'center'} alignItems={'center'}  mx={8} p={2}>
-                <Box fontSize={"8xl"} color={t.color} _hover={{fontSize:"9xl",transition:'smopth'}}>{t.icon}</Box>
-                <Text fontSize={"md"} fontWeight={500}>{t.name}</Text>
-              </Stack>
-            
-          )
+            <Stack justifyContent={"center"} alignItems={"center"} mx={8} p={2}>
+              <Box
+                fontSize={"7xl"}
+                color={t.color}
+                _hover={{ fontSize: "8xl", transition: "smooth" }}
+              >
+                {t.icon}
+              </Box>
+              <Text fontSize={"md"} fontWeight={500}>
+                {t.name}
+              </Text>
+            </Stack>
+          );
         })}
-
       </SimpleGrid>
     </Box>
   );
