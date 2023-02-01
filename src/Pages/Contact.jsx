@@ -18,12 +18,10 @@ import React, { useRef } from "react";
 import { BsGithub, BsLinkedin, BsPerson,BsYoutube } from 'react-icons/bs';
 import {  MdOutlineEmail } from 'react-icons/md';
 import emailjs from "@emailjs/browser";
-import { useState } from 'react';
 import { useToast } from '@chakra-ui/react'
 
 export default function Contact() {
   const form = useRef();
-  const [show, setShow] = useState(false);
   const toast = useToast()
   const sendEmail = (e) => {
     e.preventDefault();
@@ -52,7 +50,6 @@ export default function Contact() {
         }
       );
     e.target.reset();
-    setShow(false)
   };
 
   return (
@@ -75,14 +72,15 @@ export default function Contact() {
               }}>
              Contact me
             </Heading>
-
+                          <Box>
+                              
             <Stack
               spacing={{ base: 4, md: 8, lg: 20 }}
-              direction={{ base: 'column', md: 'column' }}>
+              direction={{ base: 'column', md: 'column',sm:'row' }}>
               <Stack
                 align="center"
                 justify="space-between"
-                  direction={{ base: 'column', md: 'row' }}
+                  direction={{ base: 'row', md: 'row',sm:'row' }}
                   
                 >
                 <Link href="https://github.com/brar21">
@@ -92,7 +90,7 @@ export default function Contact() {
                     variant="ghost"
                     size="xl"
                     // fontSize="3xl"
-                      icon={<BsGithub size="5rem" />}
+                      icon={<BsGithub size="3rem" />}
                     _hover={{
                       bg: 'red.400',
                    
@@ -106,7 +104,7 @@ export default function Contact() {
                     aria-label="youtube"
                     variant="ghost"
                     size="4rem"
-                      icon={<BsYoutube size="5rem" />}
+                      icon={<BsYoutube size="3rem" />}
                     _hover={{
                       bg: 'red.400',
                  
@@ -120,7 +118,7 @@ export default function Contact() {
                     aria-label="linkedin"
                     variant="ghost"
                     size="xl"
-                    icon={<BsLinkedin size="5rem" />}
+                    icon={<BsLinkedin size="3rem" />}
                     _hover={{
                       bg: 'red.400',
                      
@@ -129,7 +127,7 @@ export default function Contact() {
                   />
                 </Link>
               </Stack>
-                {show ? <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail}>
                   <Box
                   
                     borderRadius="lg"
@@ -182,8 +180,9 @@ export default function Contact() {
                       </Button>
                     </VStack>
                   </Box>
-                </form>:<Button onClick={()=>setShow(true)} bg={'red.400'}>Send Message</Button>}
+                </form>
             </Stack>
+</Box>
           </VStack>
         </Box>
       </Box>
