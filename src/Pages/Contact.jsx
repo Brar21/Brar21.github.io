@@ -11,6 +11,7 @@ import {
   InputGroup,
   InputLeftElement,
   Link,
+  SimpleGrid,
   Stack,
   Textarea,
   VStack,
@@ -60,7 +61,7 @@ export default function Contact() {
   };
 
   return (
-    <Box position={"static"} m="auto" w={"100%"}>
+    <Box position={"static"} m="auto" w={"90%"}>
       <Flex align="center" justify="center" id="contact">
         <Box
           borderRadius="lg"
@@ -80,27 +81,30 @@ export default function Contact() {
               </Heading>
 
               <Stack
-                spacing={{ base: 4, md: 8, lg: 20 }}
-                direction={{
-                  base: "row",
-                  md: "column",
-                  sm: "column",
+                              spacing={{base: 4,md: 8,lg: 20}}
+                              display={{sm:'grid',md:"flex",lg:'flex',}}
+                              direction={{
+                                  sm: "column",
+                                  
                   lg: "row",
                 }}
               >
                 <Box>
                   <Image
                     src="https://mohit-portfolio.vercel.app/assets/contact.f495edec.svg"
-                    w={"500px"}
-                    alt="contact svg"
+                    p={"1rem"}
+                                      alt="contact svg"
+                                      align={''}
                   />
-                  <Stack
+                  <SimpleGrid
                     m={"auto"}
                     align="center"
                     justifyContent="space-between"
-                    display={"flex"}
+                    display={{sm:'grid',md:"flex",lg:'flex'}}
                     flexDirection="row"
                     spacing={{ base: 2, md: 4, lg: 8 }}
+                                      columns={2}
+                                      autoRows
                   >
                     <Button bg={"transparent"} display="none"></Button>
                     <Button
@@ -188,13 +192,17 @@ export default function Contact() {
                       </Link>
                     </Button>
                 
-                  </Stack>
+                  </SimpleGrid>
                 </Box>
-                <Stack align="center" justify="space-between" display={"grid"}>
-                  <form ref={form} onSubmit={sendEmail}>
-                    <Box borderRadius="lg" p={8} shadow="base">
+                              <Stack align="center" justifyContent={'center'} display={"grid"}
+                              >
+                                  <form ref={form} onSubmit={sendEmail}
+                              >
+                                      <Box borderRadius="lg" p={8} shadow="base"
+                              w={{lg:"auto",sm:"100%",md:'100%'}}
+                              >
                                           <VStack spacing={5}>
-                                              <Box display={'flex'} gap='1rem'>
+                                              <Box display={{base:'grid',lg:'flex'}} gap='1rem'>
                                                   
                         <FormControl isRequired>
                           <FormLabel>Name</FormLabel>
