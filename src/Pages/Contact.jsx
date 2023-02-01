@@ -16,7 +16,14 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React, { useRef } from "react";
-import { BsGithub, BsLinkedin, BsPerson, BsYoutube } from "react-icons/bs";
+import {
+  BsGithub,
+  BsLinkedin,
+  BsPerson,
+  BsYoutube,
+  BsWhatsapp,
+} from "react-icons/bs";
+import { SiGmail } from "react-icons/si";
 import { MdOutlineEmail } from "react-icons/md";
 import emailjs from "@emailjs/browser";
 import { useToast } from "@chakra-ui/react";
@@ -89,15 +96,21 @@ export default function Contact() {
                     alt="contact svg"
                   />
                   <Stack
-                                      m={"auto"}
-                                      align='center'
-                                      justifyContent='space-between'
+                    m={"auto"}
+                    align="center"
+                    justifyContent="space-between"
                     display={"flex"}
                     flexDirection="row"
                     spacing={{ base: 2, md: 4, lg: 8 }}
                   >
                     <Button bg={"transparent"} display="none"></Button>
-                    <Button>
+                    <Button
+                      bg="red.400"
+                      color="white"
+                      _hover={{
+                        bg: "red.400",
+                      }}
+                    >
                       <Link href="https://github.com/brar21">
                         <IconButton
                           aria-label="github"
@@ -112,63 +125,84 @@ export default function Contact() {
                         Github
                       </Link>
                     </Button>
-                    <Button>
+
+                    <Button
+                      bg="red.400"
+                      color="white"
+                      _hover={{
+                        bg: "red.400",
+                      }}
+                    >
+                      <Link href="https://www.linkedin.com/in/varinder-brar">
+                        <IconButton
+                          aria-label="linkedin"
+                          variant="ghost"
+                          size="4rem"
+                          icon={<BsLinkedin size="2rem" />}
+                          _hover={{
+                            bg: "red.400",
+                          }}
+                          isRound
+                        />{" "}
+                        LinkedIn
+                      </Link>
+                    </Button>
+                    <Button
+                      bg="red.400"
+                      color="white"
+                      _hover={{
+                        bg: "red.400",
+                      }}
+                    >
+                      <Link>
+                        <IconButton
+                          aria-label="linkedin"
+                          variant="ghost"
+                          size="4rem"
+                          icon={<SiGmail size="2rem" />}
+                          _hover={{
+                            bg: "red.400",
+                          }}
+                        />{" "}
+                        vs21418@gmail.com
+                      </Link>
+                    </Button>
+                    <Button
+                      bg="red.400"
+                      color="white"
+                      _hover={{
+                        bg: "red.400",
+                      }}
+                    >
+                      <Link href="https://wa.me/916280849667" target={"_blank"}>
+                        <IconButton
+                          aria-label="linkedin"
+                          variant="ghost"
+                          size="4rem"
+                          icon={<BsWhatsapp size="2rem" />}
+                          _hover={{
+                            bg: "red.400",
+                          }}
+                          isRound
+                        />{" "}
+                        +91 6280849667
+                      </Link>
+                    </Button>
+                    <Button
+                      bg="red.400"
+                      color="white"
+                      _hover={{
+                        bg: "red.400",
+                      }}
+                    >
                       <Link href="https://www.youtube.com/@JavaScriptFolks">
                         <IconButton
                           aria-label="yotube"
                           variant="ghost"
                           size="4rem"
                           icon={<BsYoutube size="2rem" />}
-                          _hover={{
-                            bg: "red.400",
-                          }}
                         />
                         Youtube
-                      </Link>
-                    </Button>
-                    <Button>
-                      <Link href="https://www.linkedin.com/in/varinder-brar">
-                        <IconButton
-                          aria-label="linkedin"
-                          variant="ghost"
-                          size="4rem"
-                          icon={<BsLinkedin size="2rem" />}
-                          _hover={{
-                            bg: "red.400",
-                          }}
-                          isRound
-                        />{" "}
-                        LinkedIn
-                      </Link>
-                    </Button>
-                    <Button>
-                      <Link href="https://www.linkedin.com/in/varinder-brar">
-                        <IconButton
-                          aria-label="linkedin"
-                          variant="ghost"
-                          size="4rem"
-                          icon={<BsLinkedin size="2rem" />}
-                          _hover={{
-                            bg: "red.400",
-                          }}
-                          isRound
-                        />{" "}
-                        Gmail
-                      </Link>
-                    </Button>
-                    <Button>
-                      <Link href="https://www.linkedin.com/in/varinder-brar">
-                        <IconButton
-                          aria-label="linkedin"
-                          variant="ghost"
-                          size="4rem"
-                          icon={<BsLinkedin size="2rem" />}
-                          _hover={{
-                            bg: "red.400",
-                          }}
-                          isRound
-                        />{" "}
-                        LinkedIn
                       </Link>
                     </Button>
                   </Stack>
