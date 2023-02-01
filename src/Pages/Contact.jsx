@@ -41,8 +41,9 @@ export default function Contact() {
           title: 'Mail Send.',
           description: "Mail is Send to Varinder.",
           status: 'success',
-          duration: 9000,
+          duration: 5000,
           isClosable: true,
+          position:"top-right"
         })
           console.log("SUCCESS!", response.status, response.text);
         },
