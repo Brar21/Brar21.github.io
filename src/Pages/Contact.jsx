@@ -12,20 +12,20 @@ import {
   Link,
   Stack,
   Textarea,
-  VStack,useToast
+  VStack
 } from '@chakra-ui/react';
 import React, { useRef } from "react";
-import { BsGithub, BsLinkedin, BsPerson, BsTwitter, BsYoutube } from 'react-icons/bs';
-import { MdEmail, MdOutlineEmail } from 'react-icons/md';
+import { BsGithub, BsLinkedin, BsPerson,BsYoutube } from 'react-icons/bs';
+import {  MdOutlineEmail } from 'react-icons/md';
 import emailjs from "@emailjs/browser";
 import { useState } from 'react';
-
+import { useToast } from '@chakra-ui/react'
 
 export default function Contact() {
   const form = useRef();
   const [show, setShow] = useState(false);
+  const toast = useToast()
   const sendEmail = (e) => {
-    //const toast = useToast()
     e.preventDefault();
 
     emailjs
@@ -37,13 +37,13 @@ export default function Contact() {
       )
       .then(
         (response) => {
-        //    toast({
-        //  title: 'Account created.',
-        //  description: "Mail is Send to Varinder.",
-        //  status: 'success',
-        //  duration: 9000,
-        //  isClosable: true,
-        //})
+            toast({
+          title: 'Mail Send.',
+          description: "Mail is Send to Varinder.",
+          status: 'success',
+          duration: 9000,
+          isClosable: true,
+        })
           console.log("SUCCESS!", response.status, response.text);
         },
         (error) => {
