@@ -20,7 +20,6 @@ import {
   BsGithub,
   BsLinkedin,
   BsPerson,
-  BsYoutube,
   BsWhatsapp,
 } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
