@@ -188,29 +188,15 @@ export default function Contact() {
                         +91 6280849667
                       </Link>
                     </Button>
-                    <Button
-                      bg="red.400"
-                      color="white"
-                      _hover={{
-                        bg: "red.400",
-                      }}
-                    >
-                      <Link href="https://www.youtube.com/@JavaScriptFolks">
-                        <IconButton
-                          aria-label="yotube"
-                          variant="ghost"
-                          size="4rem"
-                          icon={<BsYoutube size="2rem" />}
-                        />
-                        Youtube
-                      </Link>
-                    </Button>
+                
                   </Stack>
                 </Box>
                 <Stack align="center" justify="space-between" display={"grid"}>
                   <form ref={form} onSubmit={sendEmail}>
                     <Box borderRadius="lg" p={8} shadow="base">
-                      <VStack spacing={5}>
+                                          <VStack spacing={5}>
+                                              <Box display={'flex'} gap='1rem'>
+                                                  
                         <FormControl isRequired>
                           <FormLabel>Name</FormLabel>
 
@@ -236,6 +222,7 @@ export default function Contact() {
                             />
                           </InputGroup>
                         </FormControl>
+                                              </Box>
 
                         <FormControl isRequired>
                           <FormLabel>Message</FormLabel>
