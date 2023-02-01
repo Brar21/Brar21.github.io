@@ -212,7 +212,7 @@ export default function Contact() {
                             <Input
                               type="text"
                               name="user_name"
-                              placeholder="Your Name"
+                              placeholder="Name"
                             />
                           </InputGroup>
                         </FormControl>
@@ -225,7 +225,7 @@ export default function Contact() {
                             <Input
                               type="email"
                               name="user_email"
-                              placeholder="Your Email"
+                              placeholder="Email"
                             />
                           </InputGroup>
                         </FormControl>
@@ -236,7 +236,7 @@ export default function Contact() {
 
                           <Textarea
                             name="message"
-                            placeholder="Your Message"
+                            placeholder="Message"
                             rows={6}
                             resize="none"
                           />
