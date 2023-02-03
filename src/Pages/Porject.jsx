@@ -70,18 +70,7 @@ const Project = () => {
       url: "https://github.com/AdityaBr11/Nykaa-Clone",
       description:
         "Nykaa.com Clone is ReactJS e-commerce web application that allows you to buy cosmetics products online with effortable prices.",
-      language: [
-        <FaHtml5 color="red.600" />,
-        <FaCss3Alt color="red.500" />,
-        " ",
-        <SiJavascript color="yellow.400" />,
-        " ",
-        <FaReact color="blue.400" />,
-        " ",
-        <SiFirebase color="orange.500" />,
-        " ",
-        <SiChakraui color="teal.400" />,
-      ],
+
       image:
         "https://camo.githubusercontent.com/fe904ef2dbd4519af3547dfbdc316657eaa3511f71be243ce9122d80a69075aa/68747470733a2f2f692e6962622e636f2f43516b305232542f6e796b61612e706e67",
     },
@@ -150,7 +139,18 @@ const Project = () => {
               ) : (
                 "react projects"
               )}
-             
+                   {/*language: [
+        <FaHtml5 color="red.600" />,
+        <FaCss3Alt color="red.500" />,
+        " ",
+        <SiJavascript color="yellow.400" />,
+        " ",
+        <FaReact color="blue.400" />,
+        " ",
+        <SiFirebase color="orange.500" />,
+        " ",
+        <SiChakraui color="teal.400" />,
+      ],*/}
               {t.title === "Zara-Website" ? (
                 <List
                   display={"flex"}
@@ -167,6 +167,97 @@ const Project = () => {
                           </Text>
                           <Text color="yellow.400">
                           <SiJavascript  />
+                          </Text>
+                </List>
+              ) : (
+                          <List>
+                               {t.title}
+               </List>
+                  )}
+                    {t.title === "Mailhubb.com" ? (
+                <List
+                  display={"flex"}
+                  gap={4}
+                  fontSize={"1.5rem"}
+                  p={5}
+                  color={"color"}
+                >
+                  <Text color="red.600">
+                          <FaHtml5  />
+                          </Text>
+                          <Text color="red.500">
+                          <FaCss3Alt  />
+                          </Text>
+                          <Text color="yellow.400">
+                          <SiJavascript  />
+                          </Text>
+                          <Text color={"blue.400"}>
+                              <FaReact/>
+                          </Text>
+                          <Text color={"teal.400"}>
+                              <SiChakraui/>
+                          </Text>
+
+                </List>
+              ) : (
+                          <List>
+                               {t.title}
+               </List>
+                  )}
+                    {t.title === "Typetest.com" ? (
+                <List
+                  display={"flex"}
+                  gap={4}
+                  fontSize={"1.5rem"}
+                  p={5}
+                  color={"color"}
+                >
+                  <Text color="red.600">
+                          <FaHtml5  />
+                          </Text>
+                          <Text color="red.500">
+                          <FaCss3Alt  />
+                          </Text>
+                          <Text color="yellow.400">
+                          <SiJavascript  />
+                          </Text>
+                          <Text color={"blue.400"}>
+                              <FaReact/>
+                          </Text>
+                          <Text color={"teal.400"}>
+                              <SiChakraui/>
+                          </Text>
+                          <Text>
+                              <SiRedux/>
+                          </Text>
+                </List>
+              ) : (
+                          <List>
+                               {t.title}
+               </List>
+                  )}
+                    {t.title === "Nykaa.com" ? (
+                <List
+                  display={"flex"}
+                  gap={4}
+                  fontSize={"1.5rem"}
+                  p={5}
+                  color={"color"}
+                >
+                  <Text color="red.600">
+                          <FaHtml5  />
+                          </Text>
+                          <Text color="red.500">
+                          <FaCss3Alt  />
+                          </Text>
+                          <Text color="yellow.400">
+                          <SiJavascript  />
+                          </Text>
+                          <Text color={"blue.400"}>
+                              <FaReact/>
+                          </Text>
+                          <Text color={"teal.400"}>
+                              <SiChakraui/>
                           </Text>
                 </List>
               ) : (
