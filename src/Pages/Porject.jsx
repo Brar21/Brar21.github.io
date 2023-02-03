@@ -17,14 +17,12 @@ import {
   SiChakraui,
   SiFirebase,
   SiJavascript,
-  SiMaterialui,
+
   SiMongodb,
   SiExpress,
   SiTypescript,
   SiNodedotjs,
   SiRedux,
-  SiLinux,
-  SiNpm,
 } from "react-icons/si";
 import {
   FaGitAlt,
