@@ -169,7 +169,7 @@ const Project = () => {
                 </List>
               ) : (
                           <List>
-                               "react projects"
+                               {t.title}
                </List>
               )}
 
