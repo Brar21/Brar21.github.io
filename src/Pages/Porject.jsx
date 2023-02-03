@@ -32,15 +32,6 @@ const Project = () => {
       url: "https://github.com/Brar21/Zara-Clone",
       description:
         "The company specializes in fast fashion, and products include clothing, accessories, shoes, beauty, and perfumes. Zara is one of the most successful fashion retail brands in the world",
-      language: [
-        <FaHtml5 color="red.600" />,
-        " ",
-        <FaCss3Alt color="red.500" />,
-        " ",
-        <SiJavascript color="yellow.400" />,
-        " ",
-        " ",
-      ],
       image:
         "https://github.com/kunalchandel4/teamDeskChampions/raw/main/images/Screenshot%20(1096).png",
     },
@@ -50,13 +41,6 @@ const Project = () => {
       url: "https://github.com/Brar21/NDTV-Website.com",
       description:
         "This is a personal project based Professional Resume Builder, with downloading in PDF format feature. Made with the help of react redux.",
-      language: [
-        <FaHtml5 color="red.600" />,
-        <FaCss3Alt color="red.500" />,
-        " ",
-        <SiJavascript color="yellow.400" />,
-        " ",
-      ],
       image:
         "https://github.com/Brar21/NDTV-Website.com/raw/master/imges/Homepage.jpg?raw=true",
     },
@@ -175,7 +159,15 @@ const Project = () => {
                   p={5}
                   color={"color"}
                 >
-                  {t.language}
+                  <Text color="red.600">
+                          <FaHtml5  />
+                          </Text>
+                          <Text color="red.500">
+                          <FaCss3Alt  />
+                          </Text>
+                          <Text color="yellow.400">
+                          <SiJavascript  />
+                          </Text>
                 </List>
               ) : (
                           <List>
