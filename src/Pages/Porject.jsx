@@ -51,7 +51,7 @@ const Project = () => {
       url: "https://github.com/Brar21/MailHubb.com",
       description:
         "MailChimp is a marketing automation platform designed and developed for businesses using email to reach out to their target market.",
-      language: [" ", <GrReactjs  />, " ", <SiChakraui color='teal.400' />, " ", < FaHtml5 color='red.600'  />, " ", <SiCss3 color='red.500' />, " ", <SiJavascript  />],
+      language: [" ", <FaReact color='blue.400'  />, " ", <SiChakraui color='teal.400' />, " ", < FaHtml5 color='red.600'  />, " ", <SiCss3 color='red.500' />, " ", <SiJavascript  />],
       image:
         "https://github.com/Brar21/MailHubb.com/blob/master/mailhubb/src/Images/Screenshot%202022-12-04%20102411.jpg?raw=true",
     },
