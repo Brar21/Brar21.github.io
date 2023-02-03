@@ -25,7 +25,6 @@ import {
   SiRedux,
 } from "react-icons/si";
 import {
-  FaGitAlt,
   FaHtml5,
   FaReact,
   FaCss3Alt,

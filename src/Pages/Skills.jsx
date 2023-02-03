@@ -3,7 +3,6 @@ import {
   SiChakraui,
   SiFirebase,
   SiJavascript,
-  SiMaterialui,
   SiMongodb,
   SiExpress,
   SiTypescript,
@@ -65,12 +64,6 @@ const Skills = () => {
       icon: <SiChakraui />,
       color: "teal.400",
     },
-    {
-      name: "Material UI",
-      icon: <SiMaterialui />,
-      color: "blue.600",
-    },
-
     {
       name: "Typescript",
       icon: <SiTypescript />,
