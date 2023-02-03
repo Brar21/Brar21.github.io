@@ -97,14 +97,14 @@ export default function Contact() {
                                       align={''}
                   />
                   <SimpleGrid
-                    m={"auto"}
+                                      m={"1rem auto"}
+                                      gap='1rem'
                     align="center"
                     justifyContent="space-between"
                     display={{sm:'grid',md:"flex",lg:'flex'}}
                     flexDirection="row"
-                    spacing={{ base: 2, md: 4, lg: 8 }}
+                    spacing={{ base: 2, md: 4, lg: 12 }}
                                       columns={2}
-                                      autoRows
                   >
                     <Button bg={"transparent"} display="none"></Button>
                     <Button
