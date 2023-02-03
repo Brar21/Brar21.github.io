@@ -224,12 +224,13 @@ const Project = () => {
                           <Text color={"blue.400"}>
                               <FaReact/>
                           </Text>
+                          <Text color={'yellow.500'}>
+                              <SiFirebase/>
+                          </Text>
                           <Text color={"teal.400"}>
                               <SiChakraui/>
                           </Text>
-                          <Text>
-                              <SiRedux/>
-                          </Text>
+                          
                 </List>
               ) : (
                           <List>
@@ -255,6 +256,12 @@ const Project = () => {
                           </Text>
                           <Text color={"blue.400"}>
                               <FaReact/>
+                          </Text>
+                          <Text color={"red.500"}>
+                              <SiRedux/>
+                          </Text>
+                          <Text color={'yellow.500'}>
+                              <SiFirebase/>
                           </Text>
                           <Text color={"teal.400"}>
                               <SiChakraui/>
