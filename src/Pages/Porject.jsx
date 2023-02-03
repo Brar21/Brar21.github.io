@@ -1,5 +1,4 @@
 import React from "react";
-// import { Box } from '@chakra-ui/react'
 import {
   Box,
   Heading,
@@ -17,13 +16,9 @@ import {
   SiChakraui,
   SiFirebase,
   SiJavascript,
-  SiMongodb,
-  SiExpress,
-  SiTypescript,
-  SiNodedotjs,
   SiRedux,
 } from "react-icons/si";
-import { FaHtml5, FaReact, FaCss3Alt, FaBootstrap } from "react-icons/fa";
+import { FaHtml5, FaReact, FaCss3Alt } from "react-icons/fa";
 const Project = () => {
   const ProjectData = [
     {
@@ -50,17 +45,7 @@ const Project = () => {
       url: "https://github.com/Brar21/MailHubb.com",
       description:
         "MailChimp is a marketing automation platform designed and developed for businesses using email to reach out to their target market.",
-      language: [
-        <FaHtml5 color="red.600" />,
-        " ",
-        <FaCss3Alt color="red.500" />,
-        " ",
-        <SiJavascript color="yellow.400" />,
-        " ",
-        <FaReact color="blue.400" />,
-        " ",
-        <SiChakraui color="teal.400" />,
-      ],
+   
       image:
         "https://github.com/Brar21/MailHubb.com/blob/master/mailhubb/src/Images/Screenshot%202022-12-04%20102411.jpg?raw=true",
     },
@@ -80,18 +65,6 @@ const Project = () => {
       url: "https://github.com/Brar21/Typemaster-speedtester",
       description:
         "Typing Master to check real time typing speed and accuracy's during typing paragraphs. Also providing ranking according to typing speed.",
-      language: [
-        <FaHtml5 color="red.600" />,
-        <FaCss3Alt color="red.500" />,
-        " ",
-        <SiJavascript color="yellow.400" />,
-        " ",
-        <FaReact color="blue.400" />,
-        " ",
-        <SiFirebase color="orange.500" />,
-        " ",
-        <SiChakraui color="teal.400" />,
-      ],
       image:
         "https://github.com/Brar21/Typemaster-speedtester/raw/master/src/images/Homepage.jpg?raw=true",
     },
@@ -136,21 +109,10 @@ const Project = () => {
                           
         
                 </List>
-              ) : (
-                "react projects"
-              )}
-                   {/*language: [
-        <FaHtml5 color="red.600" />,
-        <FaCss3Alt color="red.500" />,
-        " ",
-        <SiJavascript color="yellow.400" />,
-        " ",
-        <FaReact color="blue.400" />,
-        " ",
-        <SiFirebase color="orange.500" />,
-        " ",
-        <SiChakraui color="teal.400" />,
-      ],*/}
+              ) : 
+                " "
+              }
+                 
               {t.title === "Zara-Website" ? (
                 <List
                   display={"flex"}
@@ -169,11 +131,7 @@ const Project = () => {
                           <SiJavascript  />
                           </Text>
                 </List>
-              ) : (
-                          <List>
-                               {t.title}
-               </List>
-                  )}
+              ) :" "}
                     {t.title === "Mailhubb.com" ? (
                 <List
                   display={"flex"}
@@ -199,11 +157,9 @@ const Project = () => {
                           </Text>
 
                 </List>
-              ) : (
-                          <List>
-                               {t.title}
-               </List>
-                  )}
+              ) : 
+                        ""
+                  }
                     {t.title === "Typetest.com" ? (
                 <List
                   display={"flex"}
@@ -232,11 +188,7 @@ const Project = () => {
                           </Text>
                           
                 </List>
-              ) : (
-                          <List>
-                               {t.title}
-               </List>
-                  )}
+              ) : " "}
                     {t.title === "Nykaa.com" ? (
                 <List
                   display={"flex"}
@@ -247,9 +199,6 @@ const Project = () => {
                 >
                   <Text color="red.600">
                           <FaHtml5  />
-                          </Text>
-                          <Text color="red.500">
-                          <FaCss3Alt  />
                           </Text>
                           <Text color="yellow.400">
                           <SiJavascript  />
@@ -267,11 +216,7 @@ const Project = () => {
                               <SiChakraui/>
                           </Text>
                 </List>
-              ) : (
-                          <List>
-                               {t.title}
-               </List>
-              )}
+              ) : " "}
 
               <Flex justifyContent={"space-around"} gap={[4]} mb="2rem">
                 <Button
