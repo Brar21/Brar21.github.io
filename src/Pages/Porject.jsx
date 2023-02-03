@@ -41,7 +41,7 @@ const Project = () => {
       url: "https://github.com/Brar21/Zara-Clone",
       description:
         "The company specializes in fast fashion, and products include clothing, accessories, shoes, beauty, and perfumes. Zara is one of the most successful fashion retail brands in the world",
-      language: [<FaHtml5 color='red.600'  />, " ", <SiCss3 color='red.500' />, " ", <SiJavascript  />, " ", " "],
+      language: [<FaHtml5 color='red.600'  />, " ", <SiCss3 color='red.500' />, " ", <SiJavascript color="yellow.400"  />, " ", " "],
       image:
         "https://github.com/kunalchandel4/teamDeskChampions/raw/main/images/Screenshot%20(1096).png",
     },
@@ -51,7 +51,7 @@ const Project = () => {
       url: "https://github.com/Brar21/MailHubb.com",
       description:
         "MailChimp is a marketing automation platform designed and developed for businesses using email to reach out to their target market.",
-      language: [" ", <FaReact color='blue.400'  />, " ", <SiChakraui color='teal.400' />, " ", < FaHtml5 color='red.600'  />, " ", <SiCss3 color='red.500' />, " ", <SiJavascript  />],
+      language: [" ", <FaReact color='blue.400'  />, " ", <SiChakraui color='teal.400' />, " ", < FaHtml5 color='red.600'  />, " ", <SiCss3 color='red.500' />, " ", <SiJavascript color="yellow.400"  />],
       image:
         "https://github.com/Brar21/MailHubb.com/blob/master/mailhubb/src/Images/Screenshot%202022-12-04%20102411.jpg?raw=true",
     },
@@ -61,7 +61,7 @@ const Project = () => {
       url: "https://github.com/Brar21/NDTV-Website.com",
       description:
         "This is a personal project based Professional Resume Builder, with downloading in PDF format feature. Made with the help of react redux.",
-      language: [<FaHtml5 color='red.600' />, <SiCss3 color='red.500' />, " ", <SiJavascript />, " "],
+      language: [<FaHtml5 color='red.600' />, <SiCss3 color='red.500' />, " ", <SiJavascript color="yellow.400" />, " "],
       image:
         "https://github.com/Brar21/NDTV-Website.com/raw/master/imges/Homepage.jpg?raw=true",
       },
@@ -71,7 +71,7 @@ const Project = () => {
         url: "https://github.com/AdityaBr11/Nykaa-Clone",
         description:
           "Nykaa.com Clone is ReactJS e-commerce web application that allows you to buy cosmetics products online with effortable prices.",
-        language: [<FaHtml5 color='red.600'  />, <SiCss3 color='red.500' />, " ", <SiJavascript />, " "],
+        language: [<FaHtml5 color='red.600'  />, <SiCss3 color='red.500' />, " ", <SiJavascript color="yellow.400" />, " "],
         image:
           "https://camo.githubusercontent.com/fe904ef2dbd4519af3547dfbdc316657eaa3511f71be243ce9122d80a69075aa/68747470733a2f2f692e6962622e636f2f43516b305232542f6e796b61612e706e67",
       },
@@ -81,7 +81,7 @@ const Project = () => {
         url: "https://github.com/Brar21/Typemaster-speedtester",
         description:
           "Typing Master to check real time typing speed and accuracy's during typing paragraphs. Also providing ranking according to typing speed.",
-        language: [<FaHtml5 color='red.600' />, <SiCss3 color='red.500' />, " ", <SiJavascript />, " "],
+        language: [<FaHtml5 color='red.600' />, <SiCss3 color='red.500' />, " ", <SiJavascript color="yellow.400" />, " "],
         image:
           "https://github.com/Brar21/Typemaster-speedtester/raw/master/src/images/Homepage.jpg?raw=true",
       },
