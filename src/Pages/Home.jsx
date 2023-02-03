@@ -7,8 +7,6 @@ import {
   Text,
   Button,
   Image,
-  Icon,
-  IconButton,
   useColorModeValue,
 } from '@chakra-ui/react';
 import { useState } from 'react';
