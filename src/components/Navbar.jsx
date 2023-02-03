@@ -1,6 +1,5 @@
 import React from 'react';
 import NavLink from './NavLink';
-import css from "./Navbar.css"
 import {
     Box,
     Flex,
