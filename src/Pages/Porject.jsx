@@ -151,7 +151,17 @@ const Project = () => {
                   p={5}
                   color={"color"}
                 >
-                  {t.language}
+                          <Text color="red.600">
+                          <FaHtml5  />
+                          </Text>
+                          <Text color="red.500">
+                          <FaCss3Alt  />
+                          </Text>
+                          <Text color="yellow.400">
+                          <SiJavascript  />
+                          </Text>
+                          
+        
                 </List>
               ) : (
                 "react projects"
