@@ -25,6 +25,7 @@ const Links = [
     { name: "Skills", id: "skills" },
     { name: "Projects", id: "projects" },
     { name: "Contact", id: "contact" },
+    { name: "Resume" ,id:"resume"}
 ];
 
 
@@ -71,7 +72,7 @@ export default function Nav() {
                             <Menu>
                                
                                 <Button
-                                    onClick={window.open("https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view")}
+                                    onClick={()=>window.open("https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view")}
                                     variant={'link'}
                                     cursor={'pointer'}
                                     minW={0}
