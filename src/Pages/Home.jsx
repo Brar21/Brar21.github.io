@@ -9,7 +9,9 @@ import {
   Image,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { useState } from 'react';
+import {useState} from 'react';
+import Resume from "./Varinder_Brar_Resume.pdf"
+
 
 import Typewriter from "typewriter-effect";
 export default function Home() {
@@ -71,22 +73,23 @@ export default function Home() {
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: 'column', sm: 'row' }}>
          
-                <Button
-                  as={'a'}
-              rounded={'full'}
-              size={'lg'}
-              fontWeight={'normal'}
-                  px={6}
-                  href={'https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view?usp=sharing'}
-                  mt={8}
-                  bg="none"
-                  border={"1px solid red"}
-                  _hover={{ bg: "red.400" }}
-                  target={'_blank'}
-                  download={'https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view?usp=sharing'}
-              >
-              Resume
-            </Button>
+         <Button
+                                    onClick={()=>window.open("https://drive.google.com/file/d/16yCvFjENxUHmZ7T564TxagBEBtEt9Y4E/view")}
+                                    variant={'link'}
+                                    cursor={'pointer'}
+                                    minW={0}
+                                    _hover={{ bg:"red.400" }}
+                                    bg="red.400 "
+                                    color='white'
+                                    textDecoration='none'
+                                    padding='2 5'
+                                    display={{ base: 'none', md: 'flex' }}
+                                    target={"_blank"}
+                                    rel="noreferrer"  
+                                >
+                                          <a href={Resume} download={"Varinder_Brar_Resume.pdf"}>RESUME</a>    
+                                    </Button>
+                             
             </Stack>
           </Box>
         </Stack>
