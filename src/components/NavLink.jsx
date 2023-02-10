@@ -18,7 +18,9 @@ function NavLink({ to, name, onClose, ...rest }) {
        textDecoration='none'
        padding='2 5'
        target={"_blank"}
-       rel="noreferrer"  
+            rel="noreferrer"  
+            display={{ base: 'grid', md: 'none' }}
+            
    >
              <a href={Resume} download={"Varinder_Brar_Resume.pdf"}>RESUME</a>    
 </Button>:<Link to={to} spy={true} smooth={true} offset={-60} duration={1000} onClick={onClose}>
