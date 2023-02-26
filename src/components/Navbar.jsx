@@ -72,7 +72,7 @@ export default function Nav() {
                             <Menu>
                                
                                 <Button
-                                    onClick={()=>window.open("https://drive.google.com/file/d/1FcU6NJQHfHq4RByVl_vEBIpcb5Ig6MDb/view")}
+                                    onClick={()=>window.open("https://drive.google.com/file/d/172btifiNmPUdJFonCULefi8coZ0sLkRi/view")}
                                     variant={'link'}
                                     cursor={'pointer'}
                                     minW={0}
