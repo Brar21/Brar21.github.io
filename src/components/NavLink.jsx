@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
 import {Link} from "react-scroll"
-import Resume from "./Varinder_Brar_Resume.pdf"
+import "./fw19_0493-Varinder-Brar-Resume.pdf"
 
 function NavLink({ to, name, onClose, ...rest }) {
 
@@ -20,9 +20,8 @@ function NavLink({ to, name, onClose, ...rest }) {
        target={"_blank"}
             rel="noreferrer"  
             display={{ base: 'grid', md: 'none' }}
-            
-   >
-             <a href={Resume} download={"Varinder_Brar_Resume.pdf"}>RESUME</a>    
+>
+             <a href={"fw19_0493-Varinder-Brar-Resume.pdf"} download={"fw19_0493-Varinder-Brar-Resume.pdf"}>RESUME</a>    
 </Button>:<Link to={to} spy={true} smooth={true} offset={-60} duration={1000} onClick={onClose}>
             <Button
 
