@@ -17,7 +17,7 @@ import {
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import {HamburgerIcon,CloseIcon} from '@chakra-ui/icons';
-import  "./fw19_0493-Varinder-Brar-Resume.pdf"
+import Resume from "./fw19_0493-Varinder-Brar-Resume.pdf"
 
 const Links = [
     { name: "Home", id: "home" },
@@ -72,10 +72,12 @@ export default function Nav() {
                             <Menu>
                                
                                 <Button
+                                as={'a'}
                                     onClick={()=>window.open("https://drive.google.com/file/d/172btifiNmPUdJFonCULefi8coZ0sLkRi/view")}
                                     variant={'link'}
                                     cursor={'pointer'}
                                     minW={0}
+                                    href={Resume}
                                     _hover={{ bg:"red.400" }}
                                     bg="red.400 "
                                     color='white'
@@ -84,8 +86,9 @@ export default function Nav() {
                                     display={{ base: 'none', md: 'flex' }}
                                     target={"_blank"}
                                     rel="noreferrer"  
+                                    download={"fw19_0493-Varinder-Brar-Resume.pdf"}
                                 >
-                                          <a href={"fw19_0493-Varinder-Brar-Resume.pdf"} download={"fw19_0493-Varinder-Brar-Resume.pdf"}>RESUME</a>    
+                                    Resume
                                     </Button>
                              
                             </Menu>
