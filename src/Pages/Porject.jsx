@@ -67,7 +67,15 @@ const Project = () => {
         "Typing Master to check real time typing speed and accuracy's during typing paragraphs. Also providing ranking according to typing speed.",
       image:
         "https://github.com/Brar21/Typemaster-speedtester/raw/master/src/images/Homepage.jpg?raw=true",
-    },
+    },  {
+        title: "RoamingAngels.com",
+        link: "https://roamingangels-yadavarjun182-team.netlify.app/",
+        url: "https://github.com/yadavarjun182/kind-bushes-4533",
+        description:
+          "Roaming Angels is an E-Commerce Website for babies and kids products.It is Full-Stack web-application with MongoDB Database.",
+        image:
+          "https://camo.githubusercontent.com/e3a22046f47dbe0ceea2768712d49a03fe6699f604094e138563f1035ba4ff2f/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313030302f312a315f6534666e7547656e472d6a4b72584f6a4c7065512e706e67",
+      },
   ];
   return (
     <Box id="projects">
@@ -190,6 +198,34 @@ const Project = () => {
                 </List>
               ) : " "}
                     {t.title === "Nykaa.com" ? (
+                <List
+                  display={"flex"}
+                  gap={4}
+                  fontSize={"1.5rem"}
+                  p={5}
+                  color={"color"}
+                >
+                  <Text color="red.600">
+                          <FaHtml5  />
+                          </Text>
+                          <Text color="yellow.400">
+                          <SiJavascript  />
+                          </Text>
+                          <Text color={"blue.400"}>
+                              <FaReact/>
+                          </Text>
+                          <Text color={"red.500"}>
+                              <SiRedux/>
+                          </Text>
+                          <Text color={'yellow.500'}>
+                              <SiFirebase/>
+                          </Text>
+                          <Text color={"teal.400"}>
+                              <SiChakraui/>
+                          </Text>
+                </List>
+              ) : " "}
+  {t.title === "RoamingAngels.com" ? (
                 <List
                   display={"flex"}
                   gap={4}
