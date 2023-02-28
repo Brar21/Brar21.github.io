@@ -10,7 +10,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import  "./fw19_0493-Varinder-Brar-Resume.pdf";
+import Resume from "./fw19_0493-Varinder-Brar-Resume.pdf";
 
 import Typewriter from "typewriter-effect";
 export default function Home() {
@@ -81,8 +81,14 @@ export default function Home() {
                 direction={{ base: "column", sm: "row" }}
               >
                 <Button
-                  onClick={() =>window.open("https://drive.google.com/file/d/172btifiNmPUdJFonCULefi8coZ0sLkRi/view")}
+                  onClick={() =>
+                    window.open(
+                      "https://drive.google.com/file/d/172btifiNmPUdJFonCULefi8coZ0sLkRi/view"
+                    )
+                  }
                   rounded={"full"}
+                  as={"a"}
+                  href={Resume}
                   size={"lg"}
                   fontWeight={"normal"}
                   px={6}
@@ -92,10 +98,9 @@ export default function Home() {
                   _hover={{ bg: "red.400" }}
                   target={"_blank"}
                   rel="noreferrer"
+                  download={"fw19_0493-Varinder-Brar-Resume.pdf"}
                 >
-                  <a href={"fw19_0493-Varinder-Brar-Resume.pdf"} download={"fw19_0493-Varinder-Brar-Resume.pdf"}>
-                    RESUME
-                  </a>
+                                      RESUME
                 </Button>
               </Stack>
             </Box>
