@@ -211,6 +211,9 @@ const Project = () => {
                   <Text color="red.600">
                           <FaHtml5  />
                           </Text>
+                          <Text color="red.500">
+                          <FaCss3Alt  />
+                          </Text>
                           <Text color="yellow.400">
                           <SiJavascript  />
                           </Text>

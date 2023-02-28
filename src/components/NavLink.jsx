@@ -1,8 +1,7 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
 import {Link} from "react-scroll"
-import Resume from"./fw19_0493-Varinder-Brar-Resume.pdf"
-
+import Resume from "./fw19_0493-Varinder-Brar-Resume.pdf";
 function NavLink({ to, name, onClose, ...rest }) {
 
 
