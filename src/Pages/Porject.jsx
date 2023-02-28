@@ -9,7 +9,10 @@ import {
   Flex,
   Button,
   List,
-} from "@chakra-ui/react";
+} from "@chakra-ui/react";import {
+    SiMongodb,
+    SiExpress,
+  } from "react-icons/si";
 import { AiFillGithub } from "react-icons/ai";
 import { FaRegEye } from "react-icons/fa";
 import {
@@ -245,8 +248,11 @@ const Project = () => {
                           <Text color={"red.500"}>
                               <SiRedux/>
                           </Text>
-                          <Text color={'yellow.500'}>
-                              <SiFirebase/>
+                          <Text color={'green.500'}>
+                              <SiMongodb/>
+                          </Text>
+                          <Text color={'red.500'}>
+                              <SiExpress/>
                           </Text>
                           <Text color={"teal.400"}>
                               <SiChakraui/>
